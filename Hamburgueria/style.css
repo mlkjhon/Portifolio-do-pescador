@@ -6,8 +6,6 @@
     color: #B22222;
 }
 
-
-
 .telaFav {
   display: none; /* começa escondido */
   position: fixed;
@@ -59,7 +57,14 @@
   margin-bottom: 15px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
+  
  
+}
+.info{
+  color: #1C1C1C;
+}
+.info > h3{
+  color: #B22222;
 }
 
 .card img {
@@ -72,7 +77,7 @@
 
 .card .info h3 {
   margin: 0;
-  color: #B22222;
+  
 }
 
 .card .info p {
@@ -91,12 +96,37 @@
   cursor: pointer;
 }
 #bntFavoritos{
+  margin-top: 20px;
     border: none;
+     display: block;
+  padding: 10px 20px;
+  background: #B22222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 } #bntPromo{
+  margin-top: 20px;
     border: none;
+     display: block;
+  padding: 10px 20px;
+  background: #B22222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 #bntPorções{
+  margin-top: 20px;
 border: none;
+ display: block;
+  padding: 10px 20px;
+  background: #B22222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
 }
 #fecharPro {
   display: block;
@@ -164,7 +194,7 @@ text-align: center;
   height: 150px;
   width: 200px;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 1s ease;
   display: block;
 }
 .imagens:hover{
@@ -177,13 +207,14 @@ text-align: center;
   color: #B22222;
   
 }
-
-.banner_principal{
-margin-top: 2px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  display: block;
+.banner_principal {
+    height: 150px; /* ajuste a altura que quiser */
+    overflow: hidden;
+    border-radius: 10px;
 }
-.banner_principal:hover{
-  transform: translateY(-10px);
+
+.banner_img {
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* efeito de fade */
 }
