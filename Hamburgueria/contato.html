@@ -6,13 +6,39 @@
     <title>Burguer Station</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <header class="header">
 <a href="Hamburgueria.html"><img  src="ChatGPT Image 20 de set. de 2025, 11_29_14.png" alt="" class="logo"></a>
 </header>
+
 <body class="body">
 <h1 class="letra">
     Fale Conosco
 </h1>
-<p style="display: flex; align-items:end;">A página Fale Conosco é destinada a receber mensagens, dúvidas, sugestões e principalmente reclamações dos visitantes. Além disso, disponibiliza informações de contato, como telefone, endereço e redes sociais, permitindo uma comunicação direta e eficiente com a empresa.</p>
+
+ <div class="container">
+    <div class="texto">
+      A página Fale Conosco é destinada a receber mensagens, dúvidas, sugestões e principalmente reclamações dos visitantes. Além disso, disponibiliza informações de contato, como telefone, endereço e redes sociais, permitindo uma comunicação direta e eficiente com a empresa.
+    </div> 
+
+    <form action="#" method="post">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Ex: Kauan Souza" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Ex: kauan123@gmail.com" required>
+
+<label for="Telefone">Telefone</label>
+      <input type="Telefone" id="Telefone" name="Telefone" placeholder="Ex: (18) 00000-0000" required>
+
+      <label for="assunto">Assunto</label>
+      <textarea id="assunto" name="assunto" placeholder="Digite sua mensagem" required></textarea>
+
+      
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
 </body>
 </html>
