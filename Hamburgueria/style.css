@@ -3,11 +3,15 @@
     color: #1C1C1C;
 }
 .body{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color:beige;
+
 }
 .links{
-    color: #B22222;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px 5px;
+    color: #ffffff;
+  border-radius: 6px;
+  background-color: #B22222;
+  transition: background-color 0.3s;
 
 }
 
@@ -98,8 +102,9 @@
 }
 
 #fecharFav {
-  display: flex;
-  margin: 20px auto 0;
+ margin-top: 20px;
+    border: none;
+     display: block;
   padding: 10px 20px;
   background: #B22222;
   color: #fff;
@@ -193,10 +198,6 @@ nav a {
   color: white; /* cor do texto */
   font-weight: bold;
 }
-.mds{
-    display: flex;
-    gap: 20px;
-}
 .logo {
  height: 100px;
   display: flex;
@@ -204,6 +205,14 @@ justify-content: center;
 }
 .letra{
   text-align: center;
+  margin: 20px auto 0;
+  padding: 5px 10px;
+  background: #B22222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
 }
 .imagens{
   height: 150px;
@@ -242,6 +251,8 @@ justify-content: center;
   margin: 20px;
   gap: 10px;
 }
+
+
 .menubnt {
   padding: 10px 30px;
   background: #B22222;
@@ -250,19 +261,9 @@ justify-content: center;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  min-width: 120px; /* deixa todos com tamanho parecido */
-width: 70%;
-}
-.menubnt {
-  padding: 10px 30px;
-  background: #B22222;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  min-width: 120px;
+width: 50%;
   transition: background 0.3s ease;
+  
 }
 .menubnt:hover {
   background: #FFB800; /* amarelo mostarda no hover */
@@ -279,14 +280,7 @@ width: 70%;
   margin-top: 10px;
   text-align: center;
 }
-.menumeio{
-    flex:1;
-   display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  height: 100%;
-}
+
 .imagensCar{
  margin: 10px;
     height: 150px;
@@ -308,21 +302,16 @@ width: 70%;
   margin: 4px;
   
 }
-.menuDireita{
-  flex:1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  height: 100%;
-}
+
 .menuEsquerda{
-    flex:1;
+flex: 1;
   display: flex;
+  gap: 10px;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   height: 100%;
+  
 }
 
 /* Hover dos botões principais */
@@ -384,14 +373,178 @@ width: 70%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 .links:hover{
-  color: #FFB800;      /* texto preto */
-  transition: 0.3s;    /* suaviza a troca */
-}
+  color: #000000;    
+  transition: 0.3s; 
+  background-color: #FFB800; 
+}  
+
 .bntC:hover{
-  color: #FFB800;      /* texto preto */
+ color: #372727;    
   transition: 0.3s;    /* suaviza a troca */
 }
 .bntCar:hover{
-  color: #FFB800;      /* texto preto */
+  color: #372727;     
   transition: 0.3s;    /* suaviza a troca */
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+    padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.559);
+  transition: background-color 0.1s;
+align-items: center;
+  
+}
+.item img {
+    height: 150px;
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 1s ease;
+    
+}
+.item img:hover{
+  transform: translateY(-2px);
+}
+
+.item:hover {
+  background-color: #bab7b7; 
+}
+
+.continuacao img{
+  border-radius: 50px;
+display: flex;
+gap: 20px;
+}
+.continuacao p{
+  display: flex;
+
+}
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    width: 320px;
+    text-align: center;
+}
+.form-container h2 {
+    color: #B22222; /* vermelho */
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #B22222; /* vermelho */
+    font-size: 14px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #FFB800; /* amarelo */
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao focar no input */
+input:focus {
+    border-color: #B22222; /* vermelho */
+    box-shadow: 0 0 8px rgba(178,34,34,0.5);
+    outline: none;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #B22222; /* vermelho */
+    color: #FFB800; /* amarelo */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Botão ao passar o mouse */
+button:hover {
+    background-color: #FFB800; /* amarelo */
+    color: #B22222; /* vermelho */
+}
+
+/* Placeholder dos inputs */
+::placeholder {
+    color: #aaa;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 10px;
+
+}
+.texto {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+
+}
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  color: #000;
+}
+input, textarea {
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #FFB800;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.Cheese{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.559);
+  transition: background-color 0.1s;
+align-items: center;
+  
+}
+.Cheese img {
+    height: 450px;
+  width: 560px;
+  border-radius: 10px;
+  transition: transform 1s ease;
+    
+}
+
+.avaliacao{
+  display: flex;
+  flex-direction: column;
+
+}
+.avaliacao img{
+  width: 150px;
+  border-radius: 10px;
+}
+.carrinho{
+  width: 50px;
+  height:50px;
+  margin-left: 400px;
 }
